@@ -1,1 +1,10 @@
-/*# sourceMappingURL=SearchBar.css.map */
+input {
+  padding: 10px;
+  background-color: #3a3657;
+  border: 0;
+  border-radius: 20px;
+  background-image: url(../public/img/iconmonstr-magnifier-11.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 80%;
+}/*# sourceMappingURL=SearchBar.css.map */
