@@ -1,0 +1,16 @@
+nav {
+  margin: auto;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+nav .nav-links .nav-item {
+  margin: 0 10px;
+}
+nav .nav-links .a {
+  text-decoration: none;
+}/*# sourceMappingURL=NavBar.css.map */
