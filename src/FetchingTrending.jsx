@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 const FetchingTrending = () => {
   const [movies, setMovies] = useState([]);
 
@@ -27,15 +27,19 @@ const FetchingTrending = () => {
   return (
     <>
     <h2>Trending</h2>
-    {movies.map((movie) => (
-          <div>
-              <img key={movie.id}
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-            />
-            <p>{movie.title}</p>
-          </div>
-        ))}
+    <div className='trending'>
+      {movies.map((movie) => (
+            <Link to="/detail">
+              <div className={movie.id}>
+                <img key={movie.id}
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title}/>
+              <p className='titleMovie'>{movie.title}</p>
+            </div>
+              </Link>
+          ))}
+    </div>
+    
     </>
   );
 };

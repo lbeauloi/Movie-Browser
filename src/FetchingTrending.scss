@@ -1,3 +1,21 @@
-ul{
-    list-style: none;
+h2{
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+}
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    img{
+        width: 258px;
+        height: 359px;
+        padding: 0 15px;
+    }
+    .titleMovie{
+        max-width: 258px;
+        margin: 0;
+        padding: 0px 0px 25px 15px;
+    }
 }

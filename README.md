@@ -3,9 +3,9 @@
  * Repository : moviebrowser
  * Hosting : Netlify or Vercel or self host.
 
-## Goal
+## Goal and visual goal
 Create a web application for discovering movies.
-
+![](/public/img/overview.PNG)
 ## Requirements
 * Using React.
 * Handle the rooting with react-router-dom.

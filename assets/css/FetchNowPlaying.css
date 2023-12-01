@@ -1,7 +1,5 @@
-.currentInTheatres img {
+.currentlyInTheatres img {
   width: 327px;
   height: 191px;
-}
-.currentInTheatres p {
-  color: red;
+  border-radius: 20px;
 }/*# sourceMappingURL=FetchNowPlaying.css.map */

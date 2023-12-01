@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import FetchingTrending from "../FetchingTrending";
 import FetchNowPlaying from '../FetchNowPlaying';
+import Navbar from '../NavBar';
 
 const Home = function(){
     return(
@@ -17,7 +18,7 @@ const Home = function(){
         </main>
 
         <footer>
-          <p>This App is powered by <img className="imgCredit" src="./public/img/Asset3.svg" alt="" /></p>
+          <p>This App is powered by      <img className="imgCredit" src="./public/img/Asset3.svg" alt="" /></p>
         </footer>
       </div>    
       </>

@@ -13,7 +13,6 @@ function App() {
   
   return (
     <>
-    
     <BrowserRouter>
       <nav>
           <ul className="nav-links">
@@ -30,8 +29,6 @@ function App() {
           <Route path='*' element={<h1>404 -Page not found!</h1>}></Route>
         </Routes>
       </BrowserRouter>
-    
-      
     </>
     );
   };

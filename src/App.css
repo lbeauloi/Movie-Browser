@@ -2,6 +2,8 @@
 @import "../assets/css/SearchBar.min.css";
 @import "../assets/css/FetchingTrending.min.css";
 @import "../assets/css/FetchNowPlaying.min.css";
+@import "../assets/css/FetchDetail.min.css";
+@import "../assets/css/Discover.min.css";
 
 #root {
   max-width: 1280px;
@@ -18,10 +20,8 @@
   margin-top: 15px;
 }
 
-.image{
-  width: 150px;
-  height: 150px;
-  background-color: grey;
+.current{
+  text-align: center;
 }
 /* ***************************** */
 
@@ -62,10 +62,7 @@
 h1{
   font-size: 24px;
 }
-img{
-  width: 154px;
-  height: 215px;
-}
+
 .movieTitle{
   max-width: 154px;
 }

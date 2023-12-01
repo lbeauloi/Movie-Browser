@@ -19,10 +19,10 @@ const FetchNowPlaying = () => {
 
         const moviesData = data.results.map(movie => ({
           title: movie.title,
-          posterPath: movie.poster_path
+          backdropPath: movie.backdrop_path
         }));
 
-        const randomIndex = Math.floor(Math.random() * moviesData.length); //random pour avoir un seul film actuellement au cinéma et pas la totalité
+        const randomIndex = Math.floor(Math.random() * moviesData.length);
         const randomMovie = moviesData[randomIndex];
 
         setSelectedMovie(randomMovie);
@@ -36,10 +36,10 @@ const FetchNowPlaying = () => {
 
   return (
     <div>
-      <h2>Currently in theatres...</h2>
+      <h2 className='current'>Currently in theatres ...</h2>
       {selectedMovie && (
         <div className='currentlyInTheatres'>
-          <img src={`https://image.tmdb.org/t/p/w500/${selectedMovie.posterPath}`} alt={selectedMovie.title} />
+          <img src={`https://image.tmdb.org/t/p/w500/${selectedMovie.backdropPath}`} alt={selectedMovie.title} />
           <p>{selectedMovie.title}</p>
         </div>
       )}
@@ -48,4 +48,5 @@ const FetchNowPlaying = () => {
 };
 
 export default FetchNowPlaying;
+
 
