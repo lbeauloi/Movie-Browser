@@ -5,9 +5,10 @@ h2{
 }
 .trending{
     display: flex;
+    // overflow-x: scroll;
     flex-wrap: wrap;
     justify-content: center;
-    
+    width: 100%;
     img{
         width: 258px;
         height: 359px;

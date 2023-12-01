@@ -28,16 +28,18 @@ const FetchingTrending = () => {
     <>
     <h2>Trending</h2>
     <div className='trending'>
-      {movies.map((movie) => (
-            <Link to="/detail">
-              <div className={movie.id}>
-                <img key={movie.id}
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={movie.title}/>
-              <p className='titleMovie'>{movie.title}</p>
-            </div>
-              </Link>
-          ))}
+    {movies.map((movie) => (
+  <Link to={`/detail/${movie.id}`} key={movie.id}>
+    <div className={movie.id}>
+      <img
+        src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+        alt={movie.title}
+      />
+      <p className='titleMovie'>{movie.title}</p>
+    </div>
+  </Link>
+))}
+
     </div>
     
     </>

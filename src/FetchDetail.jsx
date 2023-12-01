@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const FetchDetail = () => {
+const FetchDetail = ({ movieId }) => {
   const [movieDetails, setMovieDetails] = useState(null);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const FetchDetail = () => {
       };
 
       try {
-        const response = await fetch('https://api.themoviedb.org/3/movie/1075794?language=en-US', options);
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US`, options);
         const data = await response.json();
         setMovieDetails(data);
       } catch (error) {
@@ -23,7 +23,7 @@ const FetchDetail = () => {
     };
 
     fetchMovieDetails();
-  }, []); // Empty dependency array to run the effect only once when the component mounts
+  }, [movieId]); // Include movieId in the dependency array to re-run the effect when movieId changes
 
   return (
     <div>

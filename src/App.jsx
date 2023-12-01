@@ -13,22 +13,24 @@ function App() {
   
   return (
     <>
-    <BrowserRouter>
-      <nav>
-          <ul className="nav-links">
-            <li className="nav-item"><Link to="/"><img className='navImg' src="./img/iconmonstr-home-1.svg" alt="home icon" /></Link></li>
-            <li className="nav-item"><Link to="/discover"><img className='navImg' src="./img/iconmonstr-magnifier-11.svg" alt="search icon" /></Link></li>
-            <li className="nav-item"><Link to="/profile"><img className='navImg' src="./img/iconmonstr-user-6.svg" alt="user profile icon" /></Link></li>
-          </ul>
-      </nav>
-        <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/detail' element={<Detail/>}></Route>
-          <Route path='/discover' element={<Discover/>}></Route>
-          <Route path='/profile' element={<Profile/>}></Route>
-          <Route path='*' element={<h1>404 -Page not found!</h1>}></Route>
-        </Routes>
-      </BrowserRouter>
+   <BrowserRouter>
+    <nav>
+      <ul className="nav-links">
+        <li className="nav-item"><Link to="/"><img className='navImg' src="./img/iconmonstr-home-1.svg" alt="home icon" /></Link></li>
+        <li className="nav-item"><Link to="/discover"><img className='navImg' src="./img/iconmonstr-magnifier-11.svg" alt="search icon" /></Link></li>
+        <li className="nav-item"><Link to="/profile"><img className='navImg' src="./img/iconmonstr-user-6.svg" alt="user profile icon" /></Link></li>
+      </ul>
+    </nav>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      {/* Modifiez le chemin de la route pour inclure le paramètre dynamique :movieId */}
+      <Route path='/detail/:movieId' element={<Detail/>}></Route>
+      <Route path='/discover' element={<Discover/>}></Route>
+      <Route path='/profile' element={<Profile/>}></Route>
+      {/* <Route path='*' element={<h1>404 -Page not found!</h1>}></Route> */}
+    </Routes>
+</BrowserRouter>
+
     </>
     );
   };
