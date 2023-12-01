@@ -25,20 +25,18 @@ const FetchingTrending = () => {
   }, []); // Exécute une seule fois au montage du composant
 
   return (
-    <div>
-
-      <ul>
-        {movies.map((movie) => (
-          <li key={movie.id}>
-            <img
+    <>
+    <h2>Trending</h2>
+    {movies.map((movie) => (
+          <div>
+              <img key={movie.id}
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
             />
             <p>{movie.title}</p>
-          </li>
+          </div>
         ))}
-      </ul>
-    </div>
+    </>
   );
 };
 

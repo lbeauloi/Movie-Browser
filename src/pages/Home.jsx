@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import FetchingTrending from "../FetchingTrending";
+import FetchNowPlaying from '../FetchNowPlaying';
 
 const Home = function(){
     return(
@@ -8,13 +9,10 @@ const Home = function(){
       <div className="Home">
         <header>
           <h1><span className="titleColor">Movie</span>Browser</h1>
-          <div className='headerClass'>
-         
-          </div>   
+         <FetchNowPlaying/>  
         </header>
 
         <main>
-          <h2>Trending</h2>
           <FetchingTrending/>
         </main>
 
