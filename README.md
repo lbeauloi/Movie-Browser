@@ -15,3 +15,5 @@ Create a web application for discovering movies.
 * If some pieces of the UI are missing you're responsible for filling the gap, creating them yourself by following the general UI style to the best of your abilities.
 * Use The Movie Database API
 * Comply with the terms of use of the API
+## Project Link
+https://tmdb-movie-browser.netlify.app/
