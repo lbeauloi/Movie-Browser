@@ -27,7 +27,7 @@ function App() {
       <Route path='/detail/:movieId' element={<Detail/>}></Route>
       <Route path='/discover' element={<Discover/>}></Route>
       <Route path='/profile' element={<Profile/>}></Route>
-      {/* <Route path='*' element={<h1>404 -Page not found!</h1>}></Route> */}
+      <Route path='*' element={<h1>404 -Page not found!</h1>}></Route>
     </Routes>
 </BrowserRouter>
 

@@ -1,5 +1,3 @@
-.currentlyInTheatres img {
-  width: 327px;
-  height: 191px;
-  border-radius: 20px;
+.currentlyInTheatres .background {
+  width: 100vw;
 }/*# sourceMappingURL=FetchNowPlaying.css.map */

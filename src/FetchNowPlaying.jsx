@@ -39,7 +39,7 @@ const FetchNowPlaying = () => {
       <h2 className='current'>Currently in theatres ...</h2>
       {selectedMovie && (
         <div className='currentlyInTheatres'>
-          <img src={`https://image.tmdb.org/t/p/w500/${selectedMovie.backdropPath}`} alt={selectedMovie.title} />
+          <img className="background" src={`https://image.tmdb.org/t/p/w500/${selectedMovie.backdropPath}`} alt={selectedMovie.title} />
           <p>{selectedMovie.title}</p>
         </div>
       )}
