@@ -1,7 +1,7 @@
 h2{
     font-size: 24px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 35px;
 }
 .trending{
     display: flex;
@@ -9,10 +9,15 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    img{
+    .imgTrending{
         width: 258px;
         height: 359px;
-        padding: 0 15px;
+        margin: 0 15px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            filter: brightness(0.5);
+            transform: scale(1.03);
+        }
     }
     .titleMovie{
         max-width: 258px;

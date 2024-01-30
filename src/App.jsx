@@ -16,6 +16,7 @@ function App() {
    <BrowserRouter>
     <nav>
       <ul className="nav-links">
+        <li className='nav-item' id='navbarLogo'><h1><span className="titleColor">Movie</span>Browser</h1></li>
         <li className="nav-item"><Link to="/"><img className='navImg' src="./img/iconmonstr-home-1.svg" alt="home icon" /></Link></li>
         <li className="nav-item"><Link to="/discover"><img className='navImg' src="./img/iconmonstr-magnifier-11.svg" alt="search icon" /></Link></li>
         <li className="nav-item"><Link to="/profile"><img className='navImg' src="./img/iconmonstr-user-6.svg" alt="user profile icon" /></Link></li>

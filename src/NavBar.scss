@@ -1,8 +1,17 @@
 .nav-links {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     width: 95%; 
-    ;
+    
+    #navbarLogo{
+      position: absolute;
+      left: 0;
+      font-size: 24px;
+      span{
+        color: orange;
+      }
+    }
 
     .nav-item {
       list-style: none;

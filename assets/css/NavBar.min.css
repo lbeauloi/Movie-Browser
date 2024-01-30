@@ -1,1 +1,1 @@
-.nav-links{display:flex;justify-content:flex-end;width:95%}.nav-links .nav-item{list-style:none;padding:15px}/*# sourceMappingURL=NavBar.min.css.map */
+.nav-links{display:flex;align-items:center;justify-content:flex-end;width:95%}.nav-links #navbarLogo{position:absolute;left:0;font-size:24px}.nav-links #navbarLogo span{color:orange}.nav-links .nav-item{list-style:none;padding:15px}/*# sourceMappingURL=NavBar.min.css.map */

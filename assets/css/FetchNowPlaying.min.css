@@ -1,1 +1,1 @@
-.currentlyInTheatres .background{width:100vw}/*# sourceMappingURL=FetchNowPlaying.min.css.map */
+.containerNowPlaying{margin-top:40px;width:100vw;height:75vh;position:relative}.containerNowPlaying .imageNowPlaying{width:100vw;height:75vh;position:relative}.containerNowPlaying .titleNowPlaying{position:absolute;left:7%;bottom:1%;color:#fff;font-size:40px;font-weight:bold;text-transform:capitalize;background-color:rgba(0,0,0,.8);border-radius:10px;padding:0px 10px}/*# sourceMappingURL=FetchNowPlaying.min.css.map */

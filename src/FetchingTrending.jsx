@@ -31,7 +31,7 @@ const FetchingTrending = () => {
     {movies.map((movie) => (
   <Link to={`/detail/${movie.id}`} key={movie.id}>
     <div className={movie.id}>
-      <img
+      <img className='imgTrending'
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt={movie.title}
       />

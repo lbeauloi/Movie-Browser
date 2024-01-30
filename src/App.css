@@ -40,9 +40,7 @@
 }
 
 /* TITLE */
-.titleColor{
-  color: orange;
-}
+
 .headerClass{
   width: 327px;
   height: 191px;
@@ -60,9 +58,7 @@
 .imgCredit{
   width: 70px;
 }
-h1{
-  font-size: 24px;
-}
+
 
 .movieTitle{
   max-width: 154px;

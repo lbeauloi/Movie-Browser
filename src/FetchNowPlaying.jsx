@@ -35,15 +35,15 @@ const FetchNowPlaying = () => {
   }, []);
 
   return (
-    <div>
-      <h2 className='current'>Currently in theatres ...</h2>
-      {selectedMovie && (
-        <div className='currentlyInTheatres'>
-          <img className="background" src={`https://image.tmdb.org/t/p/w500/${selectedMovie.backdropPath}`} alt={selectedMovie.title} />
-          <p>{selectedMovie.title}</p>
+    <>
+    {selectedMovie && (
+        <div className='containerNowPlaying'>
+          <img className='imageNowPlaying' src={`https://image.tmdb.org/t/p/w500/${selectedMovie.backdropPath}`} alt={selectedMovie.title} />
+          <p className='titleNowPlaying'>{selectedMovie.title}</p>
         </div>
       )}
-    </div>
+    </>
+      
   );
 };
 
