@@ -9,8 +9,6 @@ const Detail = function () {
 
   return (
     <>
-      <h2>Movie Detail</h2>
-      <p>Movie ID: {movieId}</p>
       <FetchDetail />
     </>
   );

@@ -24,7 +24,7 @@ function App() {
     </nav>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
-      {/* Modifiez le chemin de la route pour inclure le paramètre dynamique :movieId */}
+      {/* On modifie le chemin de la route pour inclure le paramètre dynamique :movieId */}
       <Route path='/detail/:movieId' element={<Detail/>}></Route>
       <Route path='/discover' element={<Discover/>}></Route>
       <Route path='/profile' element={<Profile/>}></Route>

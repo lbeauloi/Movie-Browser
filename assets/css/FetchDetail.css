@@ -1,4 +1,7 @@
-.details img {
+.detailsContainer {
+  margin-top: 40px;
+}
+.detailsContainer img {
   width: 375px;
   height: 287px;
 }/*# sourceMappingURL=FetchDetail.css.map */

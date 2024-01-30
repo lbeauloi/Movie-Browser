@@ -6,7 +6,6 @@ const Discover = () => {
 
   return (
     <>
-      <h1><span className="titleColor">Movie</span>Browser</h1>
       <SearchBar />
       <FetchingTrending/>  
     </>

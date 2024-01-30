@@ -26,15 +26,17 @@ const FetchDetail = ({ movieId }) => {
   }, [movieId]); // Include movieId in the dependency array to re-run the effect when movieId changes
 
   return (
-    <div>
+    <>
       {movieDetails && (
-        <div className='details'>
+        <div className='detailsContainer'>
+          <h2>Movie Detail</h2>
+          <p>Movie ID: {movieId}</p>
           <h1>{movieDetails.title}</h1>
           <img src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt="Backdrop" />
           <p>Overview: {movieDetails.overview}</p>
         </div>
       )}    
-    </div>
+    </>
   );
 };
 
