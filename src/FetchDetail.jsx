@@ -30,6 +30,7 @@ const FetchDetail = ({ movieId }) => {
     <div>
       {movieDetails && (
         <p>
+          Original Title: {movieDetails.original_title}<br />
           Genres: {movieDetails.genres?.map(genre => genre.name).join(', ')}<br />
           Overview: {movieDetails.overview}<br />
           Popularity: {movieDetails.popularity}<br />
