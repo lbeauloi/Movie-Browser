@@ -4,6 +4,7 @@ const FetchDetail = ({ movieId }) => {
   const [movieDetails, setMovieDetails] = useState(null);
 
   useEffect(() => {
+    // console.log(movieId);
     const fetchMovieDetails = async () => {
       const options = {
         method: 'GET',
@@ -24,19 +25,25 @@ const FetchDetail = ({ movieId }) => {
 
     fetchMovieDetails();
   }, [movieId]); // Include movieId in the dependency array to re-run the effect when movieId changes
-
+// console.log(movieDetails);
   return (
-    <>
+    <div>
       {movieDetails && (
-        <div className='detailsContainer'>
-          <h2>Movie Detail</h2>
-          <p>Movie ID: {movieId}</p>
-          <h1>{movieDetails.title}</h1>
-          <img src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt="Backdrop" />
-          <p>Overview: {movieDetails.overview}</p>
-        </div>
-      )}    
-    </>
+        <p>
+          Genres: {movieDetails.genres?.map(genre => genre.name).join(', ')}<br />
+          Overview: {movieDetails.overview}<br />
+          Popularity: {movieDetails.popularity}<br />
+          Production Companies: {movieDetails.production_companies?.map(company => company.name).join(', ')}<br />
+          Production Countries: {movieDetails.production_countries?.map(country => country.name).join(', ')}<br />
+          Release Date: {movieDetails.release_date}<br />
+          Runtime: {movieDetails.runtime}<br />
+          Revenue: {movieDetails.revenue}<br />
+          Tagline: {movieDetails.tagline}<br />
+          Vote Average: {movieDetails.vote_average}<br />
+          Vote Count: {movieDetails.vote_count}
+        </p>
+      )}
+    </div>
   );
 };
 
