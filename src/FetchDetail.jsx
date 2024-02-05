@@ -27,12 +27,12 @@ const FetchDetail = ({ movieId }) => {
   }, [movieId]); // Include movieId in the dependency array to re-run the effect when movieId changes
 // console.log(movieDetails);
   return (
-    <div>
+    <>
       {movieDetails && (
-        <p>
+        <div className='detailContainer'>
           Original Title: {movieDetails.original_title}<br />
-          Genres: {movieDetails.genres?.map(genre => genre.name).join(', ')}<br />
-          Overview: {movieDetails.overview}<br />
+          <div className='Genre'>{movieDetails.genres?.map(genre => genre.name).join(', ')}</div>
+          <div className='overview'>{movieDetails.overview}</div>
           Popularity: {movieDetails.popularity}<br />
           Production Companies: {movieDetails.production_companies?.map(company => company.name).join(', ')}<br />
           Production Countries: {movieDetails.production_countries?.map(country => country.name).join(', ')}<br />
@@ -42,9 +42,9 @@ const FetchDetail = ({ movieId }) => {
           Tagline: {movieDetails.tagline}<br />
           Vote Average: {movieDetails.vote_average}<br />
           Vote Count: {movieDetails.vote_count}
-        </p>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
