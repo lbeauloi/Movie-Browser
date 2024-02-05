@@ -2,4 +2,30 @@
     text-align: center;
     max-width: 80%;
     margin: auto;
+    
+    .TitleDetailPage{
+        font-size: 48px;
+    }
+    .Runtime{
+        width: 80px;
+        height: 30px;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border-radius: 20px;
+        margin: auto;
+    }
+    .Vote{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        margin: auto;
+    }
 }

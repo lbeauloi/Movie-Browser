@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../src/FetchDetail.scss","FetchDetail.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,cAAA;EACA,YAAA;ACCJ","file":"FetchDetail.css"}
+{"version":3,"sources":["../../src/FetchDetail.scss","FetchDetail.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,cAAA;EACA,YAAA;ACCJ;ADCI;EACI,eAAA;ACCR;ADCI;EACI,WAAA;EACA,YAAA;EACA,wBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;EACA,YAAA;ACCR;ADCI;EACI,WAAA;EACA,YAAA;EACA,kBAAA;EACA,wBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;ACCR","file":"FetchDetail.css"}
