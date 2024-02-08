@@ -37,10 +37,12 @@ const FetchNowPlaying = () => {
   return (
     <>
     {selectedMovie && (
+      
         <div className='containerNowPlaying'>
           <img className='imageNowPlaying' src={`https://image.tmdb.org/t/p/w500/${selectedMovie.backdropPath}`} alt={selectedMovie.title} />
           <p className='titleNowPlaying'>{selectedMovie.title}</p>
         </div>
+        
       )}
     </>
       

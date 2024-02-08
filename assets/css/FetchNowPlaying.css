@@ -1,13 +1,11 @@
 .containerNowPlaying {
   margin-top: 40px;
-  width: 100vw;
-  height: 75vh;
   position: relative;
 }
 .containerNowPlaying .imageNowPlaying {
-  width: 100vw;
-  height: 75vh;
   position: relative;
+  width: 100vw;
+  height: 70vh;
 }
 .containerNowPlaying .titleNowPlaying {
   position: absolute;
