@@ -27,4 +27,8 @@
   align-items: center;
   color: black;
   margin: auto;
+}
+.detailContainer .detailImg {
+  width: 100%;
+  margin: auto;
 }/*# sourceMappingURL=FetchDetail.css.map */

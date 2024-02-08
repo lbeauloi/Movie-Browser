@@ -48,7 +48,7 @@ const FetchDetail = ({ movieId }) => {
           <div className='Vote'>{movieDetails.vote_average}/10</div>
           
           Vote Count: {movieDetails.vote_count}
-          <img src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt={movieDetails.title} />
+          <img className="detailImg"src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt={movieDetails.title} />
         </div>
         
       )}
