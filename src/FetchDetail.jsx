@@ -27,6 +27,8 @@ const FetchDetail = ({ movieId }) => {
   }, [movieId]); // Include movieId in the dependency array to re-run the effect when movieId changes
 // console.log(movieDetails);
 
+
+
   return (
     
     <>
@@ -46,7 +48,9 @@ const FetchDetail = ({ movieId }) => {
           <div className='Vote'>{movieDetails.vote_average}/10</div>
           
           Vote Count: {movieDetails.vote_count}
+          <img src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt={movieDetails.title} />
         </div>
+        
       )}
     </>
   );
