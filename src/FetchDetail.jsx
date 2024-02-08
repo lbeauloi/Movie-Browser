@@ -17,13 +17,18 @@ const FetchDetail = ({ movieId }) => {
       try {
         const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US`, options);
         const data = await response.json();
+        data.vote_average = Number(data.vote_average).toFixed(1);
         setMovieDetails(data);
+        const hours = Math.floor(data.runtime / 60);
+        const minutes = data.runtime % 60;
+        data.runtime = `${hours}h${minutes}m`;
       } catch (error) {
         console.error('Error fetching movie details:', error);
       }
     };
 
     fetchMovieDetails();
+    
   }, [movieId]); // Include movieId in the dependency array to re-run the effect when movieId changes
 // console.log(movieDetails);
 
@@ -34,21 +39,24 @@ const FetchDetail = ({ movieId }) => {
     <>
       {movieDetails && (
         <div className='detailContainer'>
-          <div className='TitleDetailPage'>{movieDetails.original_title}</div>
-          <div className='Genre'>Genre : {movieDetails.genres?.map(genre => genre.name).join(', ')}</div>
-          <div className='overview'>{movieDetails.overview}</div>
-          <div>
-          Popularity: {movieDetails.popularity}
-          Production Companies: {movieDetails.production_companies?.map(company => company.name).join(', ')}<br />
-          Production Countries: {movieDetails.production_countries?.map(country => country.name).join(', ')}<br />
-          Release Date: {movieDetails.release_date}
+
+          <div className='detailImg'>
+            <img className="detailImg"src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt={movieDetails.title} />
           </div>
-          
-          <div className='Runtime'>{movieDetails.runtime}m</div>
-          <div className='Vote'>{movieDetails.vote_average}/10</div>
-          
-          Vote Count: {movieDetails.vote_count}
-          <img className="detailImg"src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt={movieDetails.title} />
+
+          <div className='TitleDetailPage'>{movieDetails.title}</div>
+          <div className='Genre'>{movieDetails.genres?.map((genre, index) => (
+            <p className='detailGenre' key={index}>{genre.name}</p>
+        ))}</div>
+          <div className='overview'>{movieDetails.overview}</div>
+
+
+          <div className='bottomDetails'>
+            <div className='Release'> Release Date: {movieDetails.release_date}</div>
+            <div className='Runtime'>{movieDetails.runtime}</div>
+            <div className='Vote'>{movieDetails.vote_average}/10</div>
+          </div>
+    
         </div>
         
       )}
