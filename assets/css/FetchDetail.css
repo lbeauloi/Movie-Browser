@@ -23,12 +23,22 @@
 .detailContainer .Genre .detailGenre {
   background-color: orange;
   padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 20px;
   color: black;
 }
 .detailContainer .overview {
   font-size: 16px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.detailContainer .overview .synopsisTitle {
+  font-weight: 900;
+  font-size: 24px;
+}
+.detailContainer .overview .synopsis {
+  text-align: center;
 }
 .detailContainer .bottomDetails {
   display: flex;

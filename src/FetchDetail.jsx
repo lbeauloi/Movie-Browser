@@ -48,7 +48,10 @@ const FetchDetail = ({ movieId }) => {
           <div className='Genre'>{movieDetails.genres?.map((genre, index) => (
             <p className='detailGenre' key={index}>{genre.name}</p>
         ))}</div>
-          <div className='overview'>{movieDetails.overview}</div>
+          <div className='overview'>
+            <p className='synopsisTitle'>Synopsis : </p>
+            <p className='synopsis'>{movieDetails.overview}</p>
+          </div>
 
 
           <div className='bottomDetails'>

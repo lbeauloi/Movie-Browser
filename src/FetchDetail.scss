@@ -23,6 +23,8 @@
         .detailGenre{
             background-color: orange;
             padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
             border-radius: 20px;
             color: black;
         }
@@ -30,7 +32,15 @@
     }
     .overview{
         font-size: 16px;
-        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .synopsisTitle{
+            font-weight: 900;
+            font-size: 24px;
+        }
+        .synopsis{
+            text-align: center;
+        }
     }
 
     .bottomDetails{
