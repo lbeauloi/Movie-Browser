@@ -32,6 +32,8 @@
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  width: 40%;
+  margin: auto;
 }
 .detailContainer .overview .synopsisTitle {
   font-weight: 900;
