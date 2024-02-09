@@ -15,6 +15,7 @@
         display: flex;
         justify-content: center;
         align-items: baseline;
+        padding: 15px;
         gap: 20px;
         .TitleDetailPage{
             font-size: 36px;
@@ -48,6 +49,7 @@
         .synopsisTitle{
             font-weight: 900;
             font-size: 24px;
+            margin: 0px;
         }
         .synopsis{
             text-align: center;

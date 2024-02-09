@@ -52,7 +52,7 @@ const FetchDetail = ({ movieId }) => {
           </div>
 
           <div className='overview'>
-            <p className='synopsisTitle'>Synopsis : </p>
+            <p className='synopsisTitle'>Synopsis</p>
             <p className='synopsis'>{movieDetails.overview}</p>
           </div>
 
