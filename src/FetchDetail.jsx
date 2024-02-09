@@ -44,10 +44,13 @@ const FetchDetail = ({ movieId }) => {
             <img className="detailImg"src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`} alt={movieDetails.title} />
           </div>
 
-          <div className='TitleDetailPage'>{movieDetails.title}</div>
-          <div className='Genre'>{movieDetails.genres?.map((genre, index) => (
+          <div className='firstRow'>
+            <div className='TitleDetailPage'>{movieDetails.title}</div>
+            <div className='Genre'>{movieDetails.genres?.map((genre, index) => (
             <p className='detailGenre' key={index}>{genre.name}</p>
         ))}</div>
+          </div>
+
           <div className='overview'>
             <p className='synopsisTitle'>Synopsis : </p>
             <p className='synopsis'>{movieDetails.overview}</p>

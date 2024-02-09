@@ -7,33 +7,39 @@
   margin-top: 45px;
 }
 .detailContainer .detailImg img {
-  width: 50%;
-  height: 50%;
+  width: 75%;
   border-radius: 20px;
 }
-.detailContainer .TitleDetailPage {
+.detailContainer .firstRow {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+.detailContainer .firstRow .TitleDetailPage {
   font-size: 36px;
 }
-.detailContainer .Genre {
+.detailContainer .firstRow .Genre {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.detailContainer .Genre .detailGenre {
-  background-color: orange;
-  padding: 5px;
+.detailContainer .firstRow .Genre .detailGenre {
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 20px;
-  color: black;
+  border: 1px solid orange;
+  border-radius: 10px;
+  font-size: 12px;
 }
 .detailContainer .overview {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 75%;
   margin: auto;
+  border: 1px solid white;
+  padding: 15px;
 }
 .detailContainer .overview .synopsisTitle {
   font-weight: 900;

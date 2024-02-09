@@ -6,36 +6,44 @@
     .detailImg{
         margin-top: 45px;
         img{
-            width: 50%;
-            height: 50%;
+            width: 75%;
             border-radius: 20px;
         }
     }
-    .TitleDetailPage{
-        font-size: 36px;
-    }
-    
-    .Genre{
+
+    .firstRow{
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
-        .detailGenre{
-            background-color: orange;
-            padding: 5px;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-radius: 20px;
-            color: black;
+        align-items: baseline;
+        gap: 20px;
+        .TitleDetailPage{
+            font-size: 36px;
         }
         
+        .Genre{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .detailGenre{
+                padding-left: 15px;
+                padding-right: 15px;
+                border: 1px solid orange;
+                border-radius: 10px;
+                font-size: 12px;
+            }
+            
+        }
     }
+    
     .overview{
         font-size: 16px;
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 75%;
         margin: auto;
+        border: 1px solid white ;
+        padding: 15px;
         .synopsisTitle{
             font-weight: 900;
             font-size: 24px;
