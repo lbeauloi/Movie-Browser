@@ -24,11 +24,10 @@
   gap: 10px;
 }
 .detailContainer .firstRow .Genre .detailGenre {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 2px 15px;
   border: 1px solid orange;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .detailContainer .overview {
   font-size: 16px;
@@ -56,23 +55,12 @@
   margin-top: 20px;
   padding-bottom: 25px;
 }
-.detailContainer .bottomDetails .Runtime {
-  width: 65px;
-  height: 65px;
+.detailContainer .bottomDetails .Release, .detailContainer .bottomDetails .Runtime, .detailContainer .bottomDetails .Vote {
   background-color: orange;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
-  border-radius: 100%;
-}
-.detailContainer .bottomDetails .Vote {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
+  padding: 2px 15px;
+  border-radius: 10px;
 }/*# sourceMappingURL=FetchDetail.css.map */

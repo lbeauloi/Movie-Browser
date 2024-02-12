@@ -22,6 +22,7 @@ const FetchDetail = ({ movieId }) => {
         const hours = Math.floor(data.runtime / 60);
         const minutes = data.runtime % 60;
         data.runtime = `${hours}h${minutes}m`;
+        const year = movieDetails.release_date.split('-')[0]; //on veut juste l'année par xemeple si la date de sortie est 2024-12-12 on veut juste  "2024". On utilise le split "-" et l num d'index 0 pour prendre uniquement le 1er nombre.
       } catch (error) {
         console.error('Error fetching movie details:', error);
       }
@@ -58,7 +59,7 @@ const FetchDetail = ({ movieId }) => {
 
 
           <div className='bottomDetails'>
-            <div className='Release'> Release Date: {movieDetails.release_date}</div>
+            <div className='Release'>{movieDetails.release_date.split('-')[0]}</div>
             <div className='Runtime'>{movieDetails.runtime}</div>
             <div className='Vote'>{movieDetails.vote_average}/10</div>
           </div>
