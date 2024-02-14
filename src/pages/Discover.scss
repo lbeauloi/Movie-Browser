@@ -1,21 +1,37 @@
-.containerDiscover{
-    padding: 15px;
+.wrap{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-        
+    align-items: center;
+    flex-wrap: wrap;
+}
+.containerDiscover{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 12fr; 
+    width: 600px;
+    height:500px;
+    gap: 10px;
+    margin: 20px 10px;
+    border: 2px solid white;
         .imageDiscover{
             width: 258px;
             height: 359px;
-            transition: all 0.3s ease-in-out;
+            margin: auto;
+            grid-area: 2 / 1 / 3 / 2;
         }
         
         .titleDiscover{
             max-width: 258px;
-            margin: 0;
+            text-align: center;
+            margin: auto;
             padding: 0px 0px 25px 15px;
+            grid-area: 1 / 1 / 2 / 3;
+
+        }
+
+        .videoDiscover{
+            grid-area: 2 / 2 / 3 / 3;
+            margin: auto;
         }
 }
     

@@ -38,17 +38,17 @@ function Discover() {
   };
 
   return (
-    <>
+    <div className='wrap'>
       <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search for a movie..." />
       
       {data.map((movie) => (
         <div className='containerDiscover' key={movie.id}>
           <h2 className='titleDiscover'>{movie.title}</h2>
           <img className="imageDiscover" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-          {movie.video && <iframe title={movie.title} src={`https://www.youtube.com/embed/${movie.video.key}`} />}
+          <div className='videoDiscover'>{movie.video && <iframe title={movie.title} src={`https://www.youtube.com/embed/${movie.video.key}`} />}</div>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 
