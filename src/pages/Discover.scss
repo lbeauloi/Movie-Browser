@@ -1,8 +1,11 @@
 .containerDiscover{
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     .infoContainer{
-        display: flex;
-        flex-wrap: wrap;
+        
         .imageDiscover{
             width: 258px;
             height: 359px;

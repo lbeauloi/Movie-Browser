@@ -1,9 +1,9 @@
 .containerDiscover {
   padding: 15px;
-}
-.containerDiscover .infoContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .containerDiscover .infoContainer .imageDiscover {
   width: 258px;
