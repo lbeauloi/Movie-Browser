@@ -5,7 +5,7 @@
 .containerNowPlaying .imageNowPlaying {
   position: relative;
   height: 75vh;
-  width: 87%;
+  width: 100%;
   margin: auto;
 }
 .containerNowPlaying .titleNowPlaying {
