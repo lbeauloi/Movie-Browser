@@ -4,17 +4,14 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
 }
-.containerDiscover .infoContainer .imageDiscover {
+.containerDiscover .imageDiscover {
   width: 258px;
   height: 359px;
   transition: all 0.3s ease-in-out;
 }
-.containerDiscover .infoContainer .imageDiscover:hover {
-  filter: brightness(0.5);
-  transform: scale(1.03);
-}
-.containerDiscover .infoContainer .titleDiscover {
+.containerDiscover .titleDiscover {
   max-width: 258px;
   margin: 0;
   padding: 0px 0px 25px 15px;

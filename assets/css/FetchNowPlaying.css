@@ -4,8 +4,6 @@
 }
 .containerNowPlaying .imageNowPlaying {
   position: relative;
-  height: 75vh;
-  width: 100%;
 }
 .containerNowPlaying .titleNowPlaying {
   position: absolute;
