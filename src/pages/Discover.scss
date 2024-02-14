@@ -1,16 +1,22 @@
 .containerDiscover{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    .imageDiscover{
-        width: 258px;
-        height: 359px;
-        margin: 0 15px;
-        transition: all 0.3s ease-in-out;
-        &:hover{
-            filter: brightness(0.5);
-            transform: scale(1.03);
+    padding: 15px;
+    .infoContainer{
+        display: flex;
+        flex-wrap: wrap;
+        .imageDiscover{
+            width: 258px;
+            height: 359px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                filter: brightness(0.5);
+                transform: scale(1.03);
+            }
+        }
+        .titleDiscover{
+            max-width: 258px;
+            margin: 0;
+            padding: 0px 0px 25px 15px;
         }
     }
+    
 }
