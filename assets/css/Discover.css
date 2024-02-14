@@ -1,1 +1,16 @@
-/*# sourceMappingURL=Discover.css.map */
+.containerDiscover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.containerDiscover .imageDiscover {
+  width: 258px;
+  height: 359px;
+  margin: 0 15px;
+  transition: all 0.3s ease-in-out;
+}
+.containerDiscover .imageDiscover:hover {
+  filter: brightness(0.5);
+  transform: scale(1.03);
+}/*# sourceMappingURL=Discover.css.map */
